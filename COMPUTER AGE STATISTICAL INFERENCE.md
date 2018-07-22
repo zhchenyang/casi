@@ -23,9 +23,13 @@ $$
 \hat { s e } = \left[ \sum _ { i = 1 } ^ { n } \left( x _ { i } - \overline { x } \right) ^ { 2 } / ( n ( n - 1 ) ) \right] ^ { 1 / 2 }
 $$
 
-Here *averaging(1)* is the algorithm, while the standard error provides an inference of algorithm's accuracy . It is a crucial, aspect of statistical theory that same data that supplied an estimate can also assess its accuracy.[^1]
+Here *averaging(1)* is the algorithm, while the standard error provides an inference of algorithm's accuracy . It is a crucial, aspect of the statistical theory that same data that supplied an estimate can also assess its accuracy.[^1]
 
+这里平均（1）是算法，而标准误差提供算法精度的推断。 统计理论的一个重要方面是，提供估计的相同数据也可以评估其准确性。
 
+Of course, $\hat{se}$ (3) is itself an algorithm, which could be (and is) subject to further inferential analysis concerning *its* accuracy. The point is that the algorithm come first and the inference follows at the second level of statistical consideration. In practice this means that algorithm invention is a more free-wheeling and adventurous enterprise, with inference playing catch-up as it strives to assess the accuracy, good or bad, of some hot new algorithmic methodology.
+
+当然，$\hat{se}$ 本身就是一种算法，它可以（并且）受到关于其准确性的进一步推论分析。 关键是算法首先出现，推理遵循统计考虑的第二个层次。 在实践中，这意味着算法发明是一个更加自由和冒险的企业，当它努力评估一些热门的新算法方法的准确性，无论是好还是坏，推理都在追赶。
 
 [^1]: "Inference" concerns more than accuracy: speaking broardly, algorithms say what the statistician does while inference says why he or she does it. - “推断”不仅仅关注准确性：从广义上讲，算法说明统计学家所做的事情，而推理则说明为什么他或她这样做。
 
