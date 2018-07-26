@@ -31,5 +31,13 @@ Of course, $\hat{se}$ (3) is itself an algorithm, which could be (and is) subjec
 
 当然，$\hat{se}$ 本身就是一种算法，它可以（并且）受到关于其准确性的进一步推论分析。 关键是算法首先出现，推理遵循统计考虑的第二个层次。 在实践中，这意味着算法发明是一个更加自由和冒险的企业，当它努力评估一些热门的新算法方法的准确性，无论是好还是坏，推理都在追赶。
 
+If the inference/algorithm race is a tortoise-and-hare affair, then modern electronic computation has bred a bionic hare. There are two effects at work here: computer-based technology allows scientists to collect enormous data sets, orders of magnitude larger than those that classic statistical theory was designed to deal with; huge data demands new methodology, and the demand is being met by a burst of innovative computer-based statistical algorithms. When one reads of “big data” in the news, it is usually these algorithms playing the starring roles.
+
+如果推理/算法竞赛是一场龟兔赛跑，那么现代电子计算已经培育出了一只仿生兔子。这里有两个效应: 基于计算机的技术允许科学家收集大量的数据集，这些数据集的数量级要比经典统计学理论所要处理的数据大得多;巨大的数据需要新的方法，而需求正被大量创新的基于计算机的统计算法所满足。当人们在新闻中读到“大数据”时，通常是这些算法扮演主角。
+
+Our book’s title, Computer Age Statistical Inference, emphasizes the tortoise’s side of the story. The past few decades have been a golden age of statistical methodology. It hasn’t been, quite, a golden age for statistical inference, but it has not been a dark age either. The efflorescence of ambitious new algorithms has forced an evolution (though not a revolution) in inference, the theories by which statisticians choose among competing methods. The book traces the interplay between methodology and inference as it has developed since the 1950s, the beginning of our discipline’s computer age. As a preview, we end this chapter with two examples illustrating the transition from classic to computer-age practice.
+
+我们这本书的标题，计算机时代的统计推断，强调了乌龟的一面。过去几十年是统计方法的黄金时代。这并不是统计推断的黄金时代，但也不是黑暗时代。雄心勃勃的新算法的繁荣期迫使推断(尽管不是革命)发生了变化。推断是统计学家在相互竞争的方法中选择的理论。这本书追溯了方法论和推理之间的相互作用，从20世纪50年代开始，也就是我们学科计算机时代的开始，这本书就开始发展。作为一个预览，我们结束这一章的两个例子说明从经典到计算机时代的实践的转变。	
+
 [^1]: "Inference" concerns more than accuracy: speaking broardly, algorithms say what the statistician does while inference says why he or she does it. - “推断”不仅仅关注准确性：从广义上讲，算法说明统计学家所做的事情，而推理则说明为什么他或她这样做。
 
