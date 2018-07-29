@@ -4,7 +4,9 @@
 
 Statistics is the science of learning from experience, particularly experience that arrives a little bit at a time: the successes and failures of a new experimental drug, the uncertain measurements of an asteroid's path to-ward Earth. It may seem surprising that any one theory can cover such an amorphous target as "learning from experience." In fact, there are *two* main statistical theories. Bayesianism and frequentism, whose connections and disagreements animate many of the succeeding chapters.
 
-统计学是一个从经验中学习的学科，尤其是*每次累计一点点的经验*：一种新型试验药的成功与失败，小行星驶向地球路径的不确定性测量。任何一个理论都能*适用*这样一个混乱的目标：“从经验中学习”，这似乎令人惊讶。事实上，有两种主要的统计理论。贝叶斯主义和频率派，其联系和分歧推动了许多后续章节。
+统计学是一个从经验中学习的学科，尤其是*每次得到一点点的经验*：一种新型试验药的成功与失败，小行星驶向地球路径的不确定性测量。任何一个理论都能*适用*这样一个模糊的目标：“从经验中学习”，这似乎令人惊讶。事实上，有两种主要的统计理论。贝叶斯主义和频率派，它们的联系和分歧推动了许多后续章节。
+
+*ps: at a time 指依次、逐次、每次；at one time 一度、从前*
 
 First, however, we want to discuss a less philosophical, more operational division of labor that applies to both theories: between the *algorithmic* and *inferential* aspects of statistical method, averaging. Suppose we have observed numbers $ x _ { 1 } , x _ { 2 } , \dots . . . x _ { n } $ applying to some phenomenon of interest, perhaps the automobile accident rates in the n = 50 states. The *mean*
 $$
@@ -41,3 +43,11 @@ Our book’s title, Computer Age Statistical Inference, emphasizes the tortoise�
 
 [^1]: "Inference" concerns more than accuracy: speaking broardly, algorithms say what the statistician does while inference says why he or she does it. - “推断”不仅仅关注准确性：从广义上讲，算法说明统计学家所做的事情，而推理则说明为什么他或她这样做。
 
+### A Regression Example
+
+Figure 1.1 concerns a study of kidney function. Data points $(x_i , y_i$ have been observed for n = 157 healthy volunteers, with $x_i$ the *i*th volunteer’s age in years, and $y_i$ acomposite measure “tot” of overall function.Kidney function generally declines with age, as evident in the downward scatter of the points. The rate of decline is an important question in kidney transplantation: in the past, potential donors past age 60 were prohibited, though, given a shortage of donors, this is no longer enforced.
+
+The solid line in Figure 1.1 is a linear regression
+$$
+y = \hat { \beta } _ { 0 } + \hat { \beta } _ { 1 } x
+$$
