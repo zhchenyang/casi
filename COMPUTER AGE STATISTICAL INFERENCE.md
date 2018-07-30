@@ -14,11 +14,11 @@ $$
 $$
 Summarizse the result in a single number.
 
-然而，首先，我们想讨论一个不那么哲学的，更能操作的工作，它适用于两种理论：在算法和统计方法的推论方面，平均值。假设我们观察到某些我们感兴趣的数： $ x _ { 1 } , x _ { 2 } , \dots . . . x _ { n } $ ，就当时 50 个州汽车事故率，它们的均值是：
+然而，首先，我们要讨论适用于两种理论的较少哲学，更具操作性的分工：统计方法的算法和推断方面之间的平均。假设我们观察到某些我们感兴趣的数： $ x _ { 1 } , x _ { 2 } , \dots . . . x _ { n } $ ，就当是 50 个州汽车事故率，它们的均值是：
 $$
 \overline { x } = \sum _ { i = 1 } ^ { n } x _ { i } / n
 $$
-将结果汇总到一个数据中。
+将结果汇总到一个数值中。
 
 How accurate is that number? The textbook answer is given in terms of the *standard error*,
 $$
@@ -27,11 +27,11 @@ $$
 
 Here *averaging(1)* is the algorithm, while the standard error provides an inference of algorithm's accuracy . It is a crucial, aspect of the statistical theory that same data that supplied an estimate can also assess its accuracy.[^1]
 
-这里平均（1）是算法，而标准误差提供算法精度的推断。 统计理论的一个重要方面是，提供估计的相同数据也可以评估其准确性。
+这里平均（1）是算法，而标准误差提供算法精度的推断。 统计理论的一个重要方面是，用于估计的数据也可以评估其准确性。
 
 Of course, $\hat{se}$ (3) is itself an algorithm, which could be (and is) subject to further inferential analysis concerning *its* accuracy. The point is that the algorithm come first and the inference follows at the second level of statistical consideration. In practice this means that algorithm invention is a more free-wheeling and adventurous enterprise, with inference playing catch-up as it strives to assess the accuracy, good or bad, of some hot new algorithmic methodology.
 
-当然，$\hat{se}$ 本身就是一种算法，它可以（并且）受到关于其准确性的进一步推论分析。 关键是算法首先出现，推理遵循统计考虑的第二个层次。 在实践中，这意味着算法发明是一个更加自由和冒险的企业，当它努力评估一些热门的新算法方法的准确性，无论是好还是坏，推理都在追赶。
+当然，$\hat{se}$ 本身就是一种算法，它可以(而且是)对其准确性进行进一步的推论分析。 关键是算法首先出现，*推断遵循统计考虑的第二个层次*。 在实践中，这意味着算法发明是一个更加自由和冒险的事业，当它努力评估一些热门的新算法方法的准确性，无论是好还是坏，推断都在追赶。
 
 If the inference/algorithm race is a tortoise-and-hare affair, then modern electronic computation has bred a bionic hare. There are two effects at work here: computer-based technology allows scientists to collect enormous data sets, orders of magnitude larger than those that classic statistical theory was designed to deal with; huge data demands new methodology, and the demand is being met by a burst of innovative computer-based statistical algorithms. When one reads of “big data” in the news, it is usually these algorithms playing the starring roles.
 
