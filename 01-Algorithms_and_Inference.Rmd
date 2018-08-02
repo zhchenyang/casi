@@ -51,13 +51,31 @@ Our book’s title, Computer Age Statistical Inference, emphasizes the tortoise�
 
 ## 例子：回归 A Regression Example
 
-Figure 1.1 concerns a study of kidney function. Data points $(x_i , y_i)$have been observed for n = 157 healthy volunteers, with $x_i$the *i*th volunteer’s age in years, and $y_i$acomposite measure “tot” of overall function.Kidney function generally declines with age, as evident in the downward scatter of the points. The rate of decline is an important question in kidney transplantation: in the past, potential donors past age 60 were prohibited, though, given a shortage of donors, this is no longer enforced.
+Figure 1.1 concerns a study of kidney function. Data points $(x_i, y_i)$have been observed for n = 157 healthy volunteers, with $x_i$ the *i*th volunteer’s age in years, and $y_i$ acomposite measure “tot” of overall function. Kidney function generally declines with age, as evident in the downward scatter of the points. The rate of decline is an important question in kidney transplantation: in the past, potential donors past age 60 were prohibited, though, given a shortage of donors, this is no longer enforced.
+
+图1.1 是关于肾功能的研究。观测源自 $n = 157$ 的健康志愿者的数据点 $(x_i, y_i)$ ，其中 $x_i$ 第*i*个志愿者的年龄，$y_i$ 是一个整体功能的对应值“tot”。在下方的散点图可以看出，肾功能通常随着年龄的增长而下降。下降的速度是肾脏移植的一个重要问题: 在过去，60岁以上的潜在捐赠者是被禁止的，但是，由于缺乏捐赠者，这一规定不再被执行。
 
 The solid line in Figure 1.1 is a linear regression
+
+图1.1中的实线是一个线性回归，
 
 $$
 y = \hat { \beta } _ { 0 } + \hat { \beta } _ { 1 } x
 $$
+fit to the data by least squares, that is by minimizing the sum of squared deviationston
+
+以最小二乘法拟合数据，即在所有选择的$\左(\beta _ {0}， \beta _{1} \右)$中最小化方差之和。
+
+$$
+\sum _ { i = 1 } ^ { n } \left( y _ { i } - \beta _ { 0 } - \beta _ { 1 } x _ { i } \right) ^ { 2 }
+$$
+over all choices of $\left( \beta _ { 0 } , \beta _ { 1 } \right)$. The least squares algorithm, which dates back to Gauss and Legendre in the early 1800s, gives $\hat { \beta } _ { 0 } = 2.86$ and $\hat { \beta } _ {  }1 = -0.079$ as the least squares estimates. We can read off of the fitted line an estimated value of kidney fitness for any chosen age. The top line of Table 1.1 shows estimate 1.29 at age 20, down to -3.43 at age 80.
+
+可以追溯到19世纪早期的高斯和勒让德雷算法的最小二乘算法，它给出了$\hat { \beta } _ { 0 } = 2.86$ 和 $\hat { \beta } _ { 1 } = -0.079$ 为最小二乘的估计值。我们可以从拟合线中读出任何选定年龄的肾脏适合度的估计值。表1.1的第一行显示了20岁时的估计值为1.29,80岁时的估计值为-3.43。
+
+How accurate are these estimates? This is where inference comes in: an extended version of formula (1.2), also going back to the 1800s, provides the standard errors, shown in line 2 of the table. The vertical bars in Figure 1.1 are $\pm$ two standard errors, giving them about 95% chance of containing the true expected value of tot at each age.
+
+这些估计有多精准？这就是推断的作用：公式（1.2）的扩展，也可以追溯到19世纪，提供了标准误，如表2第2行所示。 图1.1中的竖线是 $\pm$ 两个标准误差，使得它们在每个年龄段包含95％的真实预期值的可能性。
 
 ---
 
