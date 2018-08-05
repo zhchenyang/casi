@@ -25,7 +25,7 @@
 <meta name="author" content="张晨阳">
 
 
-<meta name="date" content="2018-08-01">
+<meta name="date" content="2018-08-05">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -169,11 +169,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">第 1 章</span> 算法和推断 Algorithms and Inference</h1>
 <p>Statistics is the science of learning from experience, particularly experience that arrives a little bit at a time: the successes and failures of a new experimental drug, the uncertain measurements of an asteroid’s path to-ward Earth. It may seem surprising that any one theory can cover such an amorphous target as “learning from experience.” In fact, there are <em>two</em> main statistical theories. Bayesianism and frequentism, whose connections and disagreements animate many of the succeeding chapters.</p>
 <p>统计学是一个从经验中学习的学科，尤其是<em>每次得到一点点的经验</em>：一种新型试验药的成功与失败，小行星驶向地球路径的不确定性测量。任何一个理论都能<em>适用</em>这样一个模糊的目标：“从经验中学习”，这似乎令人惊讶。事实上，有两种主要的统计理论。贝叶斯主义和频率派，它们的联系和分歧推动了许多后续章节。</p>
-<p>First, however, we want to discuss a less philosophical, more operational division of labor that applies to both theories: between the <em>algorithmic</em> and <em>inferential</em> aspects of statistical method, averaging. Suppose we have observed numbers <span class="math inline">\(x _ { 1 } , x _ { 2 } , \dots . . . x _ { n }\)</span>applying to some phenomenon of interest, perhaps the automobile accident rates in the n = 50 states. The <em>mean</em></p>
+<p>First, however, we want to discuss a less philosophical, more operational division of labor that applies to both theories: between the <em>algorithmic</em> and <em>inferential</em> aspects of statistical method, averaging. Suppose we have observed numbers <span class="math inline">\(x _ { 1 } , x _ { 2 } , \dots . . . x _ { n }\)</span> applying to some phenomenon of interest, perhaps the automobile accident rates in the n = 50 states. The <em>mean</em></p>
 <p><span class="math display">\[
 \overline { x } = \sum _ { i = 1 } ^ { n } x _ { i } / n
 \]</span></p>
-<p>然而，首先，我们要讨论适用于两种理论的较少哲学，更具操作性的分工：统计方法的算法和推断方面之间的平均。假设我们观察到某些我们感兴趣的数： <span class="math inline">\(x _ { 1 } , x _ { 2 } , \dots . . . x _ { n }\)</span>，就当是 50 个州汽车事故率，它们的均值是：</p>
+<p>然而，首先，我们要讨论适用于两种理论的较少哲学，更具操作性的分工：统计方法的算法和推断方面之间的平均。假设我们观察到某些我们感兴趣的数：<span class="math inline">\(x _ { 1 } , x _ { 2 } , \dots . . . x _ { n }\)</span>，就当是 50 个州汽车事故率，它们的均值是：</p>
 <p><span class="math display">\[
 \overline { x } = \sum _ { i = 1 } ^ { n } x _ { i } / n
 \]</span></p>
@@ -186,19 +186,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 \]</span></p>
 <p>Here <em>averaging(1)</em> is the algorithm, while the standard error provides an inference of algorithm’s accuracy . It is a crucial, aspect of the statistical theory that same data that supplied an estimate can also assess its accuracy.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <p>这里平均（1）是算法，而标准误差提供算法精度的推断。 统计理论的一个重要方面是，用于估计的数据也可以评估估计的准确性。</p>
-<p>Of course, <span class="math inline">\(\hat{se}\)</span>(3) is itself an algorithm, which could be (and is) subject to further inferential analysis concerning <em>its</em> accuracy. The point is that the algorithm come first and the inference follows at the second level of statistical consideration. In practice this means that algorithm invention is a more free-wheeling and adventurous enterprise, with inference playing catch-up as it strives to assess the accuracy, good or bad, of some hot new algorithmic methodology.</p>
-<p>当然，<span class="math inline">\(\hat{se}\)</span>本身就是一种算法，它可以(而且是)对其准确性进行进一步的推论分析。 关键是算法首先出现，<em>推断遵循统计考虑的第二个层次</em>。 在实践中，这意味着算法发明是一个更加自由和冒险的事业，当它努力评估一些热门的新算法方法的准确性，无论是好还是坏，推断都在追赶。</p>
+<p>Of course, <span class="math inline">\(\hat{se}\)</span> (3) is itself an algorithm, which could be (and is) subject to further inferential analysis concerning <em>its</em> accuracy. The point is that the algorithm come first and the inference follows at the second level of statistical consideration. In practice this means that algorithm invention is a more free-wheeling and adventurous enterprise, with inference playing catch-up as it strives to assess the accuracy, good or bad, of some hot new algorithmic methodology.</p>
+<p>当然，<span class="math inline">\(\hat{se}\)</span> 本身就是一种算法，它可以(而且是)对其准确性进行进一步的推论分析。 关键是算法首先出现，<em>推断遵循统计考虑的第二个层次</em>。 在实践中，这意味着算法发明是一个更加自由和冒险的事业，当它努力评估一些热门的新算法方法的准确性，无论是好还是坏，推断都在追赶。</p>
 <p>If the inference/algorithm race is a tortoise-and-hare affair, then modern electronic computation has bred a bionic hare. There are two effects at work here: computer-based technology allows scientists to collect enormous data sets, orders of magnitude larger than those that classic statistical theory was designed to deal with; huge data demands new methodology, and the demand is being met by a burst of innovative computer-based statistical algorithms. When one reads of “big data” in the news, it is usually these algorithms playing the starring roles.</p>
 <p>如果推理/算法竞赛是一场龟兔赛跑，那么现代电子计算已经培育出了一只仿生兔子。这里有两个效应: 基于计算机的技术允许科学家收集大量的数据集，这些数据集的数量级要比经典统计学理论所要处理的数据大得多;巨大的数据需要新的方法，而需求正被大量创新的基于计算机的统计算法所满足。当人们在新闻中读到“大数据”时，通常是这些算法扮演主角。</p>
 <p>Our book’s title, Computer Age Statistical Inference, emphasizes the tortoise’s side of the story. The past few decades have been a golden age of statistical methodology. It hasn’t been, quite, a golden age for statistical inference, but it has not been a dark age either. The efflorescence of ambitious new algorithms has forced an evolution (though not a revolution) in inference, the theories by which statisticians choose among competing methods. The book traces the interplay between methodology and inference as it has developed since the 1950s, the beginning of our discipline’s computer age. As a preview, we end this chapter with two examples illustrating the transition from classic to computer-age practice.</p>
 <p>我们这本书的标题，计算机时代的统计推断，强调了乌龟的一面。过去几十年是统计方法的黄金时代。这并不是统计推断的黄金时代，但也不是黑暗时代。雄心勃勃的新算法的繁荣期迫使推断(尽管不是革命)发生了变化。推断是统计学家在相互竞争的方法中选择的理论。这本书追溯了方法论和推理之间的相互作用，从20世纪50年代开始，也就是我们学科计算机时代的开始，这本书就开始发展。作为一个预览，我们结束这一章的两个例子说明从经典到计算机时代的实践的转变。</p>
 <div id="-a-regression-example" class="section level2">
 <h2><span class="header-section-number">1.1</span> 例子：回归 A Regression Example</h2>
-<p>Figure 1.1 concerns a study of kidney function. Data points <span class="math inline">\((x_i , y_i)\)</span>have been observed for n = 157 healthy volunteers, with <span class="math inline">\(x_i\)</span>the <em>i</em>th volunteer’s age in years, and <span class="math inline">\(y_i\)</span>acomposite measure “tot” of overall function.Kidney function generally declines with age, as evident in the downward scatter of the points. The rate of decline is an important question in kidney transplantation: in the past, potential donors past age 60 were prohibited, though, given a shortage of donors, this is no longer enforced.</p>
+<p>Figure 1.1 concerns a study of kidney function. Data points <span class="math inline">\((x_i, y_i)\)</span>have been observed for n = 157 healthy volunteers, with <span class="math inline">\(x_i\)</span> the <em>i</em>th volunteer’s age in years, and <span class="math inline">\(y_i\)</span> acomposite measure “tot” of overall function. Kidney function generally declines with age, as evident in the downward scatter of the points. The rate of decline is an important question in kidney transplantation: in the past, potential donors past age 60 were prohibited, though, given a shortage of donors, this is no longer enforced.</p>
+<p>图1.1 是关于肾功能的研究。观测源自 <span class="math inline">\(n = 157\)</span> 的健康志愿者的数据点 <span class="math inline">\((x_i, y_i)\)</span> ，其中 <span class="math inline">\(x_i\)</span> 第<em>i</em>个志愿者的年龄，<span class="math inline">\(y_i\)</span> 是一个整体功能的对应值“tot”。在下方的散点图可以看出，肾功能通常随着年龄的增长而下降。下降的速度是肾脏移植的一个重要问题: 在过去，60岁以上的潜在捐赠者是被禁止的，但是，由于缺乏捐赠者，这一规定不再被执行。</p>
 <p>The solid line in Figure 1.1 is a linear regression</p>
+<p>图1.1中的实线是一个线性回归，</p>
 <p><span class="math display">\[
 y = \hat { \beta } _ { 0 } + \hat { \beta } _ { 1 } x
-\]</span></p>
+\]</span>
+fit to the data by least squares, that is by minimizing the sum of squared deviationston</p>
+<p>以最小二乘法拟合数据，即在所有选择的<span class="math inline">\((\beta _ {0}， \beta _{1})\)</span>中最小化方差之和。</p>
+<p><span class="math display">\[
+\sum _ { i = 1 } ^ { n } \left( y _ { i } - \beta _ { 0 } - \beta _ { 1 } x _ { i } \right) ^ { 2 }
+\]</span>
+over all choices of <span class="math inline">\(\left( \beta _ { 0 } , \beta _ { 1 } \right)\)</span>. The least squares algorithm, which dates back to Gauss and Legendre in the early 1800s, gives <span class="math inline">\(\hat { \beta } _ { 0 } = 2.86\)</span> and <span class="math inline">\(\hat { \beta } _ { }1 = -0.079\)</span> as the least squares estimates. We can read off of the fitted line an estimated value of kidney fitness for any chosen age. The top line of Table 1.1 shows estimate 1.29 at age 20, down to -3.43 at age 80.</p>
+<p>可以追溯到19世纪早期的高斯和勒让德雷算法的最小二乘算法，它给出了<span class="math inline">\(\hat { \beta } _ { 0 } = 2.86\)</span> 和 <span class="math inline">\(\hat { \beta } _ { 1 } = -0.079\)</span> 为最小二乘的估计值。我们可以从拟合线中读出任何选定年龄的肾脏适合度的估计值。表1.1的第一行显示了20岁时的估计值为1.29,80岁时的估计值为-3.43。</p>
+<p>How accurate are these estimates? This is where inference comes in: an extended version of formula (1.2), also going back to the 1800s, provides the standard errors, shown in line 2 of the table. The vertical bars in Figure 1.1 are <span class="math inline">\(\pm\)</span> two standard errors, giving them about 95% chance of containing the true expected value of tot at each age.</p>
+<p>这些估计有多精准？这就是推断的作用：公式（1.2）的扩展，也可以追溯到19世纪，提供了标准误，如表2第2行所示。 图1.1中的竖线是 <span class="math inline">\(\pm\)</span> 两个标准误差，使得它们在每个年龄段包含95％的真实预期值的可能性。</p>
+<p>That 95% coverage depends on the validity of the linear regression model (1.3). We might instead try a quadratic regression <span class="math inline">\(y = \hat { \beta } _ { 0 } + \hat { \beta } _ { 1 } x + \hat { \beta } _ { 2 } x ^ { 2 }\)</span>, or a cubic, etc., all of this being well within the reach of pre-computer statistical theory.</p>
+<p>95％的覆盖率取决于线性回归模型的有效性（1.3）。 我们可能会尝试二次回归<span class="math inline">\(y = \hat{\beta}_{0} + \hat {\beta}_{1} x + \hat{\beta}_{2} x^{2}\)</span>， 或者是3 次方等，所有这些都在计算机前统计理论的范围内。</p>
+<p>A modern computer-based algorithm <strong>lowess</strong> produced the somewhat bumpy regression curve in Figure 1.2. The lowess<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> algorithm moves its attention along the <span class="math inline">\(x\)</span>-axis, fitting local polynomial curves of differing degrees to nearby <span class="math inline">\((x, y)\)</span> points. (The 1/3 in the call<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> lowess <span class="math inline">\((x,y,1/3)\)</span> determines the definition of local.) Repeated passes over the <span class="math inline">\(x\)</span>-axis refine the fit, reducing the effects of occasional anomalous points. The fitted curve in Figure 1.2 is nearly linear at the right, but more complicated at the left where points are more densely packed. It is flat between ages 25 and 35, a potentially important difference from the uniform decline portrayed in Figure 1.1.</p>
+<p>一种现代的基于计算机的算法 lowess 在图 1.2 中产生了有点不平坦的回归曲线。lowess 算法将注意力放在 x 轴上，将不同程度的局部多项式曲线拟合到附近 (x, y) 点上。(调用lowess中的1/3 (x,y,1/3) 决定了局部的定义。)在x轴上反复传递可以细化拟合，减少偶尔异常点的影响。图1.2中的拟合曲线在右边几乎是线性的，但在左边更为复杂，因为那里的点更加密集。它在25岁到35岁之间没有变化，这与图 1.1 所示的一致下降有潜在的重要区别。</p>
 <hr />
 <p>现在我们可以试试 <strong>bookdown</strong> 的一些初级功能了，例如图表。图 <a href="intro.html#fig:hello">1.1</a> 是一幅无趣的散点图，表 <a href="intro.html#tab:iris">1.1</a> 是一份枯燥的数据。</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="fl">.1</span>))</a>
@@ -277,6 +292,8 @@ y = \hat { \beta } _ { 0 } + \hat { \beta } _ { 1 } x
 <hr />
 <ol start="1">
 <li id="fn1"><p>“Inference” concerns more than accuracy: speaking broardly, algorithms say what the statistician does while inference says why he or she does it. - “推断”不仅仅关注准确性：从广义上讲，算法说明统计学家所做的事情，而推理则说明为什么他或她这样做。<a href="intro.html#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>..<a href="intro.html#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>用的都是 R 语言。<a href="intro.html#fnref3" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>

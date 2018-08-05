@@ -6,13 +6,13 @@ Statistics is the science of learning from experience, particularly experience t
 
 统计学是一个从经验中学习的学科，尤其是*每次得到一点点的经验*：一种新型试验药的成功与失败，小行星驶向地球路径的不确定性测量。任何一个理论都能*适用*这样一个模糊的目标：“从经验中学习”，这似乎令人惊讶。事实上，有两种主要的统计理论。贝叶斯主义和频率派，它们的联系和分歧推动了许多后续章节。
 
-First, however, we want to discuss a less philosophical, more operational division of labor that applies to both theories: between the *algorithmic* and *inferential* aspects of statistical method, averaging. Suppose we have observed numbers $x _ { 1 } , x _ { 2 } , \dots . . . x _ { n }$applying to some phenomenon of interest, perhaps the automobile accident rates in the n = 50 states. The *mean*
+First, however, we want to discuss a less philosophical, more operational division of labor that applies to both theories: between the *algorithmic* and *inferential* aspects of statistical method, averaging. Suppose we have observed numbers $x _ { 1 } , x _ { 2 } , \dots . . . x _ { n }$ applying to some phenomenon of interest, perhaps the automobile accident rates in the n = 50 states. The *mean*
 
 $$
 \overline { x } = \sum _ { i = 1 } ^ { n } x _ { i } / n
 $$
 
-然而，首先，我们要讨论适用于两种理论的较少哲学，更具操作性的分工：统计方法的算法和推断方面之间的平均。假设我们观察到某些我们感兴趣的数： $x _ { 1 } , x _ { 2 } , \dots . . . x _ { n }$，就当是 50 个州汽车事故率，它们的均值是：
+然而，首先，我们要讨论适用于两种理论的较少哲学，更具操作性的分工：统计方法的算法和推断方面之间的平均。假设我们观察到某些我们感兴趣的数：$x _ { 1 } , x _ { 2 } , \dots . . . x _ { n }$，就当是 50 个州汽车事故率，它们的均值是：
 
 $$
 \overline { x } = \sum _ { i = 1 } ^ { n } x _ { i } / n
@@ -34,9 +34,9 @@ Here *averaging(1)* is the algorithm, while the standard error provides an infer
 
 这里平均（1）是算法，而标准误差提供算法精度的推断。 统计理论的一个重要方面是，用于估计的数据也可以评估估计的准确性。
 
-Of course, $\hat{se}$(3) is itself an algorithm, which could be (and is) subject to further inferential analysis concerning *its* accuracy. The point is that the algorithm come first and the inference follows at the second level of statistical consideration. In practice this means that algorithm invention is a more free-wheeling and adventurous enterprise, with inference playing catch-up as it strives to assess the accuracy, good or bad, of some hot new algorithmic methodology.
+Of course, $\hat{se}$ (3) is itself an algorithm, which could be (and is) subject to further inferential analysis concerning *its* accuracy. The point is that the algorithm come first and the inference follows at the second level of statistical consideration. In practice this means that algorithm invention is a more free-wheeling and adventurous enterprise, with inference playing catch-up as it strives to assess the accuracy, good or bad, of some hot new algorithmic methodology.
 
-当然，$\hat{se}$本身就是一种算法，它可以(而且是)对其准确性进行进一步的推论分析。 关键是算法首先出现，*推断遵循统计考虑的第二个层次*。 在实践中，这意味着算法发明是一个更加自由和冒险的事业，当它努力评估一些热门的新算法方法的准确性，无论是好还是坏，推断都在追赶。
+当然，$\hat{se}$ 本身就是一种算法，它可以(而且是)对其准确性进行进一步的推论分析。 关键是算法首先出现，*推断遵循统计考虑的第二个层次*。 在实践中，这意味着算法发明是一个更加自由和冒险的事业，当它努力评估一些热门的新算法方法的准确性，无论是好还是坏，推断都在追赶。
 
 If the inference/algorithm race is a tortoise-and-hare affair, then modern electronic computation has bred a bionic hare. There are two effects at work here: computer-based technology allows scientists to collect enormous data sets, orders of magnitude larger than those that classic statistical theory was designed to deal with; huge data demands new methodology, and the demand is being met by a burst of innovative computer-based statistical algorithms. When one reads of “big data” in the news, it is usually these algorithms playing the starring roles.
 
@@ -64,7 +64,7 @@ y = \hat { \beta } _ { 0 } + \hat { \beta } _ { 1 } x
 $$
 fit to the data by least squares, that is by minimizing the sum of squared deviationston
 
-以最小二乘法拟合数据，即在所有选择的$\左(\beta _ {0}， \beta _{1} \右)$中最小化方差之和。
+以最小二乘法拟合数据，即在所有选择的$(\beta _ {0}， \beta _{1})$中最小化方差之和。
 
 $$
 \sum _ { i = 1 } ^ { n } \left( y _ { i } - \beta _ { 0 } - \beta _ { 1 } x _ { i } \right) ^ { 2 }
@@ -76,6 +76,19 @@ over all choices of $\left( \beta _ { 0 } , \beta _ { 1 } \right)$. The least sq
 How accurate are these estimates? This is where inference comes in: an extended version of formula (1.2), also going back to the 1800s, provides the standard errors, shown in line 2 of the table. The vertical bars in Figure 1.1 are $\pm$ two standard errors, giving them about 95% chance of containing the true expected value of tot at each age.
 
 这些估计有多精准？这就是推断的作用：公式（1.2）的扩展，也可以追溯到19世纪，提供了标准误，如表2第2行所示。 图1.1中的竖线是 $\pm$ 两个标准误差，使得它们在每个年龄段包含95％的真实预期值的可能性。
+
+
+That 95% coverage depends on the validity of the linear regression model (1.3). We might instead try a quadratic regression $y = \hat { \beta } _ { 0 } + \hat { \beta } _ { 1 } x + \hat { \beta } _ { 2 } x ^ { 2 }$, or a cubic, etc., all of this being well within the reach of pre-computer statistical theory.
+
+95％的覆盖率取决于线性回归模型的有效性（1.3）。 我们可能会尝试二次回归$y = \hat{\beta}_{0} + \hat {\beta}_{1} x + \hat{\beta}_{2} x^{2}$， 或者是3 次方等，所有这些都在计算机前统计理论的范围内。
+
+A modern computer-based algorithm **lowess** produced the somewhat bumpy regression curve in Figure 1.2. The lowess [^2] algorithm moves its attention along the $x$-axis, fitting local polynomial curves of differing degrees to nearby $(x, y)$ points. (The 1/3 in the call [^3] lowess $(x,y,1/3)$ determines the definition of local.) Repeated passes over the $x$-axis refine the fit, reducing the effects of occasional anomalous points. The fitted curve in Figure 1.2 is nearly linear at the right, but more complicated at the left where points are more densely packed. It is flat between ages 25 and 35, a potentially important difference from the uniform decline portrayed in Figure 1.1.
+
+一种现代的基于计算机的算法 lowess 在图 1.2 中产生了有点不平坦的回归曲线。lowess 算法将注意力放在 x 轴上，将不同程度的局部多项式曲线拟合到附近 (x, y) 点上。(调用lowess中的1/3 (x,y,1/3) 决定了局部的定义。)在x轴上反复传递可以细化拟合，减少偶尔异常点的影响。图1.2中的拟合曲线在右边几乎是线性的，但在左边更为复杂，因为那里的点更加密集。它在25岁到35岁之间没有变化，这与图 1.1 所示的一致下降有潜在的重要区别。
+
+[^2]: ..
+
+[^3]: 用的都是 R 语言。 
 
 ---
 
